@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 10/11/2021, 03:51:25 PM
+    Author     : pcgc7
+*/
+
+/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 1280px */
+@media screen and (max-width: 1280px) {
+    .contenedor {
+        grid-template-rows: repeat(15, 8em);         
+        .encabezado {            
+            .logo {
+                img {
+                    margin: 2em 1.25em;
+                }
+            }
+        }  
+        .contenido  {    
+            grid-template-rows: repeat(12, 8em);
+            .textoTitulos {
+                p {
+                    margin: 0.5em 0; 
+                }
+            }
+            .menu {
+                .opcion {
+                    font-size: 3.25em;
+                }
+                .tituloItem {
+                    font-size: 1.25em;
+                }
+            }
+            .imagenFondo {
+                .txtVision {
+                    font-size: 2.5em;   
+                }
+            }
+            .contenedor-slideshow {
+                .contenedor-imagenes {
+                    max-width: 69%;
+                    padding: 2.5em;
+                    .flecha-previo, .flecha-siguiente {
+                        font-size: 3.5em;
+                    }
+                }
+            }
+            .wave {
+                top: -7.15em;
+            }
+        }    
+        .contenedorPiepagina {
+            justify-content: space-around;
+            .columna-logo {
+                margin: 0 1em;
+            }
+            .columna-menu {
+                h2 {
+                   font-size: 1.2em; 
+                }
+                ul {
+                   padding-left: 0.25em;
+                   font-size: 0.85em;
+                }
+            }
+            .columna-redes {
+                h2 {
+                   font-size: 1.2em; 
+                }
+                .redes {
+                   line-height: 3em;
+                   .icono {
+                      font-size: 1.5em; 
+                   }
+                   a {
+                       font-size: 0.85em;
+                   }
+                   label {
+                       margin-left: 0.75em;
+                   }
+                }
+            }
+            .columna-contacto {
+                h2 {
+                   font-size: 1.2em; 
+                }
+                .datos {
+                    line-height: 3em;
+                    .icono {
+                        font-size: 1.5em;
+                    }
+                    a {
+                        font-size: 0.85em; 
+                        margin-left: 0.75em;
+                    }
+                    label {
+                        font-size: 0.85em; 
+                        margin-left: 0.75em;
+                    }
+                }
+            }                                             
+            .contenedorInformacion {
+                font-size: 0.85em;        
+            }
+        }
+    }    
+}

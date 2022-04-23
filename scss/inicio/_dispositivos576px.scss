@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 10/11/2021, 03:56:12 PM
+    Author     : pcgc7
+*/
+
+/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 576px */
+@media screen and (max-width: 576px) {
+    .contenedor {
+        grid-template-rows: repeat(15, 4.3em);         
+        .encabezado {
+            .logo {
+                img {                    
+                    margin: 1.25em 0.75em;
+                }
+            }  
+        }
+        .contenido  {    
+            grid-template-rows: repeat(12, 4.3em);
+            .textoTitulos {
+                p {
+                    font-size: 0.75em; 
+                }
+            }
+            .menu {
+                .opcion {
+                    font-size: 1.75em;
+                }
+                .tituloItem {
+                    font-size: 0.55em;
+                }
+            }            
+            .imagenFondo {
+                .txtVision {             
+                    font-size: 1em;                        
+                }  
+            }
+            .contenedor-slideshow {                
+                .contenedor-imagenes {
+                    max-width: 90%;                    
+                    padding: 1.5em 2em;
+                    .flecha-previo, .flecha-siguiente {
+                        font-size: 2em; 
+                    }
+                    .flecha-previo {
+                        left: 7%;                        
+                    }
+                    .flecha-siguiente {
+                        right: 7%;                        
+                    }
+                    .slick-dots {
+                        bottom: 4%;
+                    }
+                } 
+            }
+            .wave {        
+                top: -3.15em;        
+            }
+        }
+        .contenedorPiepagina {
+            align-items: stretch;
+            .columna-logo {
+                display: none;
+                img {
+                    display: none;
+                }
+            }                        
+            .columna-menu {
+                width: 30%;
+                padding-left: 0.5em;                
+                ul {
+                    padding-left: 1em; 
+                    line-height: 2.45em; 
+                }
+            }
+            .columna-redes {
+                width: 30%;
+                padding-left: 0.5em;                
+            }
+            .columna-contacto {
+                width: 30%;
+                padding-left: 0.5em;                
+            }
+            .contenedorInformacion {
+                margin-top: 0.75em;
+            }
+        }
+    }
+}

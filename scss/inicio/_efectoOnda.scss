@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 10/11/2021, 03:17:57 PM
+    Author     : pcgc7
+*/
+
+.wave {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    
+    height: 30%;
+    position: relative;
+    top: -10.75em;
+    z-index: 10; 
+}

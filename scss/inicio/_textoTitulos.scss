@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 9/11/2021, 05:51:23 PM
+    Author     : pcgc7
+*/
+
+.textoTitulos {
+    grid-area: titulos;   
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    
+    background: $imgBackground_1;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 70;    
+    box-shadow: $sombra;
+    
+    .imgBorde {
+        width: 27%;
+    }
+    p {
+        font-family: $tipoFuente_2;
+        margin: 1em 0;    
+        font-size: 1.5em;
+        text-align: center;
+        line-height: 1.5em;    
+        font-weight: 700;
+        font-style: italic;
+        color: $colorAlabaster;
+    }    
+}

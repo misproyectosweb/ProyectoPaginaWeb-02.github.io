@@ -1,0 +1,121 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 10/11/2021, 03:54:46 PM
+    Author     : pcgc7
+*/
+
+/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 768px */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-rows: repeat(15, 5.55em);                 
+        .contenido  {    
+            grid-template-rows: repeat(12, 5.55em);
+            .textoTitulos {
+                p {
+                    font-size: 1em; 
+                }
+            }
+            .menu {
+                .item {
+                    height: 60%;
+                }
+                .opcion {
+                    font-size: 2.25em;
+                }
+                .tituloItem {
+                    font-size: 0.75em;
+                }
+            }
+            .imagenFondo {
+                .txtVision {             
+                    font-size: 1.5em;                        
+                }    
+            }
+            .contenedor-slideshow {
+                .contenedor-imagenes {
+                    max-width: 85%;
+                    .imgSlide {                                                
+                        padding: 0.25em;
+                    }
+                    .flecha-previo, .flecha-siguiente {        
+                        font-size: 2.5em;        
+                    }
+                    .flecha-previo {
+                        left: 5%;                        
+                    }
+                    .flecha-siguiente {
+                        right: 5%;                        
+                    }
+                    .slick-list {
+                        margin: 0 2em;
+                    }
+                    .slick-dots {
+                        bottom: 3%;
+                        li {        
+                            width: 0.5em;
+                            height: 0.5em;        
+                        }   
+                    }
+                }
+            }
+            .wave {
+                top: -4.25em;
+            }
+        }
+        .contenedorPiepagina { 
+            .columna-menu {
+                h2 {
+                    font-size: 0.75em; 
+                }
+                ul {
+                    font-size: 0.5em; 
+                    padding-left: 0.5em; 
+                    line-height: 2.5em; 
+                }
+            }
+            .columna-redes {
+                h2 {
+                    font-size: 0.75em; 
+                }
+                .redes {
+                    line-height: 1.6em; 
+                    .icono {
+                        font-size: 1em;
+                    }
+                    a {
+                        font-size: 0.5em;
+                    }
+                    label {
+                        margin-left: 0.75em; 
+                    }
+                }
+            }
+            .columna-contacto {
+                h2 {
+                    font-size: 0.75em;
+                }
+                .datos {
+                    line-height: 1.6em;
+                    .icono {
+                        font-size: 1em;
+                    }
+                    a {
+                        margin-left: 0.75em; 
+                        font-size: 0.5em;
+                    }
+                    label {
+                        margin-left: 0.75em;
+                        font-size: 0.5em;
+                    }
+                }
+            }
+            .contenedorInformacion {
+                font-size: 0.5em;        
+            }
+        }
+    }
+}

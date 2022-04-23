@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 9/11/2021, 05:44:02 PM
+    Author     : pcgc7
+*/
+
+.encabezado {
+    grid-area: encabezado;   
+    
+    width: 100%;    
+    z-index: 80;
+    background: $gradiente;       
+    box-shadow: $sombra; 
+    
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        img {            
+            width: 15.75%;
+            margin: 2.25em 1.25em;
+        }
+    }        
+}

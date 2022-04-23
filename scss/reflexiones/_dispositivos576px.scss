@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 15/11/2021, 07:16:30 PM
+    Author     : pcgc7
+*/
+
+/* Dispositivos con orientación horizontal y una resolución de pantalla máxima de 576px */
+@media screen and (max-width: 576px) {
+    .contenedor {
+        grid-template-rows: 5.25em repeat(9, 1fr);
+        .encabezado {
+            .logo {
+                justify-content: space-between;
+                margin-right: 1em; 
+                img {
+                    width: 35%;
+                    margin: 0.75em; 
+                }
+                .btnMenu {
+                    display: inline-block;
+                    font-size: 1.25em; 
+                }
+            }
+            .menu {
+                a {
+                    margin: 0.3em 1em;
+                }
+            }
+        }
+        .contenido {
+            .btnVolverArriba {         
+                font-size: 1em;                                    
+                right: 0.25em;                                     
+            }
+            article {
+                h1 {
+                    font-size: 1em; 
+                }
+                hr {
+                    height: 0.1em; 
+                }
+                h3 {
+                    font-size: 0.75em;
+                }
+                p {
+                    font-size: 0.65em; 
+                }
+                .formatoNumeros {
+                    font-size: 0.65em;
+                    margin-left: -2.6em;
+                }
+                .formatoLetras {
+                    font-size: 0.65em;
+                    margin-left: -2.6em;
+                }
+                .textoVinetas1 {
+                    font-size: 0.65em;
+                    margin-left: -1.7em;
+                }
+                .textoVinetas2 {
+                    font-size: 0.65em; 
+                    margin-left: -1.7em;
+                }
+                blockquote {
+                    font-size: 0.65em; 
+                }
+                .textoGrande {
+                    width: 6.5em;                                         
+                    height: 6.5em; 
+                    font-size: 1.25em;                                        
+                }
+            }            
+        }
+    }           
+}

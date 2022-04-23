@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 18/11/2021, 03:07:52 PM
+    Author     : pcgc7
+*/
+
+/****************************** Mixin ****************************************/
+
+@mixin cuadrosInput {
+    font-family: Arial, sans-serif;
+    width: 95%;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 0.0625em solid $colorSilver;
+    border-radius: 0.25em;
+    /* Permite al usuario redimensionar verticalmente el área de texto (y no horizontalmente) */
+    resize: vertical 
+}
+
+/*****************************************************************************/
+
+.contenedorFormulario {
+    display: grid;    
+    
+    grid-gap: 0 1.5em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: flex-start;
+        background: $colorSilver;
+        border-radius: 0.3125em;
+        h3 {
+            padding-left: 0.5em;
+            color: $colorAzul;
+        }
+        .frmLabel {
+            padding-left: 0.5em;
+            color: $colorAzul;
+            font-weight: 700;
+        }
+        input[type=text] {
+            height: 2.85em;
+            @include cuadrosInput; 
+        }
+        textarea {
+            height: 10em;
+            @include cuadrosInput;
+        }
+        .frmBoton {
+            width: 30%;
+            height: 2.85em;
+            margin: 0.5em;
+            line-height: 1.75em;
+            border: 0.125em solid $colorAzul;
+            background-color: $colorSilver;
+            color: $colorAzul;
+            font-weight: bold;
+            border-radius: 0.25em;            
+            &:hover {
+                background: $colorAzul;
+                color: $colorDorado;
+                cursor: pointer;
+            }
+        }
+    
+    /******************** Estilos validaciones formulario ********************/
+    
+    @import "_validaciones.scss";
+    
+    /*************************************************************************/
+    }
+}

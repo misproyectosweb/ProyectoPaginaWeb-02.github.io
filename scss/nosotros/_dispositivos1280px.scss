@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 14/11/2021, 05:54:21 PM
+    Author     : pcgc7
+*/
+
+/* Dispositivos con orientación horizontal y una resolución de pantalla máxima de 1280px */
+@media screen and (max-width: 1280px) {
+    .contenedor {
+        grid-template-rows: 12.75em repeat(9, 1fr);
+        .encabezado {
+            .logo {
+                img {
+                    width: 65%;
+                    margin: 1.5em 1em; 
+                }
+            }
+            .menu {
+                a {
+                    font-size: 1em;
+                }
+            }
+        }
+        .contenido {
+            max-width: 85%;
+            padding: 1em;
+            article {
+                h1 {
+                    font-size: 1.75em;
+                }
+                hr {
+                    margin-bottom: 1.25em;
+                }
+                p {
+                    font-size: 0.85em;
+                }
+                figure {
+                    img {
+                        padding-right: 0.75em;
+                        padding-bottom: 0.75em; 
+                    }
+                }
+            }
+        }
+    }        
+}

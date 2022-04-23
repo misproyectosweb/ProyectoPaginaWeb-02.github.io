@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 16/11/2021, 03:10:23 PM
+    Author     : pcgc7
+*/
+
+.contenedor {
+    display: grid;    
+    
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 16em repeat(9, 1fr);  
+    
+    grid-template-areas:
+    "encabezado encabezado encabezado encabezado encabezado encabezado"
+    "actividad  actividad  actividad  actividad  actividad  actividad"
+    "actividad  actividad  actividad  actividad  actividad  actividad"
+    "actividad  actividad  actividad  actividad  actividad  actividad"
+    "actividad  actividad  actividad  actividad  actividad  actividad"
+    "actividad  actividad  actividad  actividad  actividad  actividad"
+    "actividad  actividad  actividad  actividad  actividad  actividad"
+    "actividad  actividad  actividad  actividad  actividad  actividad"
+    "actividad  actividad  actividad  actividad  actividad  actividad"
+    "actividad  actividad  actividad  actividad  actividad  actividad";
+    
+    /******************** Estilos encabezado de la página ********************/
+
+    @import "_encabezado.scss";
+
+    /******************** Estilos contenidos de la página ********************/
+
+    @import "_contenido.scss";
+    
+    /*************************************************************************/
+}

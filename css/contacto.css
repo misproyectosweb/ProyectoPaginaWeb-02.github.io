@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 17/11/2021, 05:36:07 PM Author     : pcgc7
+*/
+/****************************** Variables *************************************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 18/11/2021, 02:39:21 PM Author     : pcgc7
+*/
+/******************** Estilos generales de la página **************************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 18/11/2021, 02:42:51 PM Author     : pcgc7
+*/
+* { box-sizing: border-box; }
+
+body { font-family: "Open Sans", sans-serif; background-image: url("../imagenes/fondoAzul.jpg"); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+
+::-webkit-scrollbar { display: none; }
+
+/******************** Estilos contenedor de la página *************************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 18/11/2021, 02:47:15 PM Author     : pcgc7
+*/
+.contenedor { display: grid; grid-template-columns: repeat(6, 1fr); grid-template-rows: 16em repeat(9, 1fr); grid-template-areas: "encabezado encabezado encabezado encabezado encabezado encabezado" "contacto   contacto   contacto   contacto   contacto   contacto" "contacto   contacto   contacto   contacto   contacto   contacto" "contacto   contacto   contacto   contacto   contacto   contacto" "contacto   contacto   contacto   contacto   contacto   contacto" "contacto   contacto   contacto   contacto   contacto   contacto" "contacto   contacto   contacto   contacto   contacto   contacto" "contacto   contacto   contacto   contacto   contacto   contacto" "contacto   contacto   contacto   contacto   contacto   contacto" "contacto   contacto   contacto   contacto   contacto   contacto"; /******************** Estilos encabezado de la página ********************/ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/ /* Created on : 18/11/2021, 02:50:02 PM Author     : pcgc7
+*/ /******************** Estilos contenidos de la página ********************/ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/ /* Created on : 18/11/2021, 02:49:39 PM Author     : pcgc7
+*/ /*************************************************************************/ }
+.contenedor .encabezado { grid-area: encabezado; width: 100%; position: fixed; top: 0; z-index: 20; background: linear-gradient(to right, #f5f5f5 0%, #b59a47 100%); box-shadow: 0 0.75em 0.75em 0 rgba(0, 0, 0, 0.5); }
+.contenedor .encabezado .logo { display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
+.contenedor .encabezado .logo img { width: 73%; margin: 2.2em 1em; }
+.contenedor .encabezado .logo .btnMenu { display: none; color: #003958; text-decoration: none; font-size: 1.5em; }
+.contenedor .encabezado .menu { display: flex; flex-direction: row; justify-content: space-around; border-top: 0.0625em solid #003958; }
+.contenedor .encabezado .menu a { padding: 0.5em 0; margin: 0.5em 0; font-size: 1.25em; font-weight: 700; color: #003958; text-decoration: none; transition: all 0.3s ease; border-bottom: 0.16em solid transparent; }
+.contenedor .encabezado .menu a:hover { border-bottom: 0.16em solid #003958; }
+.contenedor .encabezado .menu i { margin-right: 0.5em; }
+.contenedor .contenido { grid-area: contacto; max-width: 66.7%; margin: 0 auto; padding: 1.25em; background: #f5f5f5; border-radius: 0.625em; border: 0.125em solid #b59a47; box-shadow: 0 0.75em 0.75em 0 rgba(0, 0, 0, 0.5); /******************** Estilos contenedor formulario **********************/ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/ /* Created on : 18/11/2021, 03:07:52 PM Author     : pcgc7
+*/ /****************************** Mixin ****************************************/ /*****************************************************************************/ /******************** Estilos contenedor ubicación ***********************/ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/ /* Created on : 18/11/2021, 05:41:10 PM Author     : pcgc7
+*/ /****************************** Mixin ****************************************/ /*****************************************************************************/ /*************************************************************************/ }
+.contenedor .contenido h1 { font-weight: bold; margin: 0.3125em 0; color: #003958; }
+.contenedor .contenido hr { margin: 0.5em 0; height: 0.2em; background: #b59a47; border: none; }
+.contenedor .contenido .contenedorFormulario { display: grid; grid-gap: 0 1.5em; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(1, 1fr); }
+.contenedor .contenido .contenedorFormulario .formulario { display: flex; flex-direction: column; justify-content: space-between; align-content: flex-start; background: #ddd; border-radius: 0.3125em; /******************** Estilos validaciones formulario ********************/ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/ /* Created on : 18/11/2021, 03:31:27 PM Author     : pcgc7
+*/ /****************************** Mixin ****************************************/ /*****************************************************************************/ /******************** Estilos para las validaciones en PHP *******************/ /*************************************************************************/ }
+.contenedor .contenido .contenedorFormulario .formulario h3 { padding-left: 0.5em; color: #003958; }
+.contenedor .contenido .contenedorFormulario .formulario .frmLabel { padding-left: 0.5em; color: #003958; font-weight: 700; }
+.contenedor .contenido .contenedorFormulario .formulario input[type=text] { height: 2.85em; font-family: Arial, sans-serif; width: 95%; margin: 0.5em; padding: 0.5em; border: 0.0625em solid #ddd; border-radius: 0.25em; /* Permite al usuario redimensionar verticalmente el área de texto (y no horizontalmente) */ resize: vertical; }
+.contenedor .contenido .contenedorFormulario .formulario textarea { height: 10em; font-family: Arial, sans-serif; width: 95%; margin: 0.5em; padding: 0.5em; border: 0.0625em solid #ddd; border-radius: 0.25em; /* Permite al usuario redimensionar verticalmente el área de texto (y no horizontalmente) */ resize: vertical; }
+.contenedor .contenido .contenedorFormulario .formulario .frmBoton { width: 30%; height: 2.85em; margin: 0.5em; line-height: 1.75em; border: 0.125em solid #003958; background-color: #ddd; color: #003958; font-weight: bold; border-radius: 0.25em; }
+.contenedor .contenido .contenedorFormulario .formulario .frmBoton:hover { background: #003958; color: #b59a47; cursor: pointer; }
+.contenedor .contenido .contenedorFormulario .formulario .formulario_grupo_input { position: relative; }
+.contenedor .contenido .contenedorFormulario .formulario .formulario_input:focus { border: 0.1875em solid #0075ff; outline: none; box-shadow: 0.1875em 0 1.875em rgba(163, 163, 163, 0.4); }
+.contenedor .contenido .contenedorFormulario .formulario .formulario_input_error { font-size: 0.75em; margin: 0; padding-left: 0.75em; color: #cc0000; font-style: italic; font-weight: 600; display: none; }
+.contenedor .contenido .contenedorFormulario .formulario .formulario_input_error-activo { display: block; }
+.contenedor .contenido .contenedorFormulario .formulario .formulario_validacion_estado { position: absolute; right: 2.5em; bottom: 1.45em; z-index: 10; font-size: 1em; opacity: 0; }
+.contenedor .contenido .contenedorFormulario .formulario .formulario_grupo-correcto .formulario_validacion_estado { color: #1ed12d; opacity: 1; }
+.contenedor .contenido .contenedorFormulario .formulario .formulario_grupo-incorrecto .frmLabel { color: #cc0000; }
+.contenedor .contenido .contenedorFormulario .formulario .formulario_grupo-incorrecto .formulario_validacion_estado { color: #cc0000; opacity: 1; }
+.contenedor .contenido .contenedorFormulario .formulario .formulario_grupo-incorrecto .formulario_input { border: 0.1875em solid #cc0000; }
+.contenedor .contenido .contenedorFormulario .formulario .error { background-color: #f66060; font-size: 0.8em; padding: 1em; font-weight: 600; margin: 0; }
+.contenedor .contenido .contenedorFormulario .formulario .correcto { background-color: #1ed12d; font-size: 0.8em; padding: 1em; font-weight: 600; margin: 0; }
+.contenedor .contenido .ubicacion { display: flex; flex-direction: column; align-content: flex-start; background: #ddd; border-radius: 0.3125em; }
+.contenedor .contenido .ubicacion .contenedorMapa h3 { padding: 0 0.5em; color: #003958; }
+.contenedor .contenido .ubicacion .contenedorMapa p { padding: 0 0.5em; font-weight: 700; color: #003958; }
+.contenedor .contenido .ubicacion .contenedorMapa .mapa { padding: 0 0.5em; }
+.contenedor .contenido .ubicacion .contenedorMapa .mapa iframe { height: 21.25em; }
+.contenedor .contenido .ubicacion .contenedorDatos h3 { padding: 0 0.5em; color: #003958; }
+.contenedor .contenido .ubicacion .contenedorDatos p { font-weight: 700; color: #003958; }
+.contenedor .contenido .ubicacion .contenedorDatos .datos { display: grid; grid-template-columns: 4em 1fr; grid-template-rows: repeat(1, 3.25em); align-items: center; }
+.contenedor .contenido .ubicacion .contenedorDatos .datos .icono { margin: 0 auto; font-size: 2em; color: #003958; }
+.contenedor .contenido .ubicacion .contenedorDatos a { text-decoration: none; font-weight: 700; color: #003958; }
+
+/******************** Estilos encabezado de la página *************************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 18/11/2021, 02:50:02 PM Author     : pcgc7
+*/
+.encabezado { grid-area: encabezado; width: 100%; position: fixed; top: 0; z-index: 20; background: linear-gradient(to right, #f5f5f5 0%, #b59a47 100%); box-shadow: 0 0.75em 0.75em 0 rgba(0, 0, 0, 0.5); }
+.encabezado .logo { display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
+.encabezado .logo img { width: 73%; margin: 2.2em 1em; }
+.encabezado .logo .btnMenu { display: none; color: #003958; text-decoration: none; font-size: 1.5em; }
+.encabezado .menu { display: flex; flex-direction: row; justify-content: space-around; border-top: 0.0625em solid #003958; }
+.encabezado .menu a { padding: 0.5em 0; margin: 0.5em 0; font-size: 1.25em; font-weight: 700; color: #003958; text-decoration: none; transition: all 0.3s ease; border-bottom: 0.16em solid transparent; }
+.encabezado .menu a:hover { border-bottom: 0.16em solid #003958; }
+.encabezado .menu i { margin-right: 0.5em; }
+
+/******************** Estilos contenidos de la página *************************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 18/11/2021, 02:49:39 PM Author     : pcgc7
+*/
+.contenido { grid-area: contacto; max-width: 66.7%; margin: 0 auto; padding: 1.25em; background: #f5f5f5; border-radius: 0.625em; border: 0.125em solid #b59a47; box-shadow: 0 0.75em 0.75em 0 rgba(0, 0, 0, 0.5); /******************** Estilos contenedor formulario **********************/ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/ /* Created on : 18/11/2021, 03:07:52 PM Author     : pcgc7
+*/ /****************************** Mixin ****************************************/ /*****************************************************************************/ /******************** Estilos contenedor ubicación ***********************/ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/ /* Created on : 18/11/2021, 05:41:10 PM Author     : pcgc7
+*/ /****************************** Mixin ****************************************/ /*****************************************************************************/ /*************************************************************************/ }
+.contenido h1 { font-weight: bold; margin: 0.3125em 0; color: #003958; }
+.contenido hr { margin: 0.5em 0; height: 0.2em; background: #b59a47; border: none; }
+.contenido .contenedorFormulario { display: grid; grid-gap: 0 1.5em; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(1, 1fr); }
+.contenido .contenedorFormulario .formulario { display: flex; flex-direction: column; justify-content: space-between; align-content: flex-start; background: #ddd; border-radius: 0.3125em; /******************** Estilos validaciones formulario ********************/ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/ /* Created on : 18/11/2021, 03:31:27 PM Author     : pcgc7
+*/ /****************************** Mixin ****************************************/ /*****************************************************************************/ /******************** Estilos para las validaciones en PHP *******************/ /*************************************************************************/ }
+.contenido .contenedorFormulario .formulario h3 { padding-left: 0.5em; color: #003958; }
+.contenido .contenedorFormulario .formulario .frmLabel { padding-left: 0.5em; color: #003958; font-weight: 700; }
+.contenido .contenedorFormulario .formulario input[type=text] { height: 2.85em; font-family: Arial, sans-serif; width: 95%; margin: 0.5em; padding: 0.5em; border: 0.0625em solid #ddd; border-radius: 0.25em; /* Permite al usuario redimensionar verticalmente el área de texto (y no horizontalmente) */ resize: vertical; }
+.contenido .contenedorFormulario .formulario textarea { height: 10em; font-family: Arial, sans-serif; width: 95%; margin: 0.5em; padding: 0.5em; border: 0.0625em solid #ddd; border-radius: 0.25em; /* Permite al usuario redimensionar verticalmente el área de texto (y no horizontalmente) */ resize: vertical; }
+.contenido .contenedorFormulario .formulario .frmBoton { width: 30%; height: 2.85em; margin: 0.5em; line-height: 1.75em; border: 0.125em solid #003958; background-color: #ddd; color: #003958; font-weight: bold; border-radius: 0.25em; }
+.contenido .contenedorFormulario .formulario .frmBoton:hover { background: #003958; color: #b59a47; cursor: pointer; }
+.contenido .contenedorFormulario .formulario .formulario_grupo_input { position: relative; }
+.contenido .contenedorFormulario .formulario .formulario_input:focus { border: 0.1875em solid #0075ff; outline: none; box-shadow: 0.1875em 0 1.875em rgba(163, 163, 163, 0.4); }
+.contenido .contenedorFormulario .formulario .formulario_input_error { font-size: 0.75em; margin: 0; padding-left: 0.75em; color: #cc0000; font-style: italic; font-weight: 600; display: none; }
+.contenido .contenedorFormulario .formulario .formulario_input_error-activo { display: block; }
+.contenido .contenedorFormulario .formulario .formulario_validacion_estado { position: absolute; right: 2.5em; bottom: 1.45em; z-index: 10; font-size: 1em; opacity: 0; }
+.contenido .contenedorFormulario .formulario .formulario_grupo-correcto .formulario_validacion_estado { color: #1ed12d; opacity: 1; }
+.contenido .contenedorFormulario .formulario .formulario_grupo-incorrecto .frmLabel { color: #cc0000; }
+.contenido .contenedorFormulario .formulario .formulario_grupo-incorrecto .formulario_validacion_estado { color: #cc0000; opacity: 1; }
+.contenido .contenedorFormulario .formulario .formulario_grupo-incorrecto .formulario_input { border: 0.1875em solid #cc0000; }
+.contenido .contenedorFormulario .formulario .error { background-color: #f66060; font-size: 0.8em; padding: 1em; font-weight: 600; margin: 0; }
+.contenido .contenedorFormulario .formulario .correcto { background-color: #1ed12d; font-size: 0.8em; padding: 1em; font-weight: 600; margin: 0; }
+.contenido .ubicacion { display: flex; flex-direction: column; align-content: flex-start; background: #ddd; border-radius: 0.3125em; }
+.contenido .ubicacion .contenedorMapa h3 { padding: 0 0.5em; color: #003958; }
+.contenido .ubicacion .contenedorMapa p { padding: 0 0.5em; font-weight: 700; color: #003958; }
+.contenido .ubicacion .contenedorMapa .mapa { padding: 0 0.5em; }
+.contenido .ubicacion .contenedorMapa .mapa iframe { height: 21.25em; }
+.contenido .ubicacion .contenedorDatos h3 { padding: 0 0.5em; color: #003958; }
+.contenido .ubicacion .contenedorDatos p { font-weight: 700; color: #003958; }
+.contenido .ubicacion .contenedorDatos .datos { display: grid; grid-template-columns: 4em 1fr; grid-template-rows: repeat(1, 3.25em); align-items: center; }
+.contenido .ubicacion .contenedorDatos .datos .icono { margin: 0 auto; font-size: 2em; color: #003958; }
+.contenido .ubicacion .contenedorDatos a { text-decoration: none; font-weight: 700; color: #003958; }
+
+/******************** Estilos para dispositivos móviles ***********************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 10/11/2021, 03:51:25 PM Author     : pcgc7
+*/
+/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 1280px */
+@media screen and (max-width: 1280px) { .contenedor { grid-template-rows: repeat(15, 8em); }
+  .contenedor .encabezado .logo img { margin: 2em 1.25em; }
+  .contenedor .contenido { grid-template-rows: repeat(12, 8em); }
+  .contenedor .contenido .textoTitulos p { margin: 0.5em 0; }
+  .contenedor .contenido .menu .opcion { font-size: 3.25em; }
+  .contenedor .contenido .menu .tituloItem { font-size: 1.25em; }
+  .contenedor .contenido .imagenFondo .txtVision { font-size: 2.5em; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes { max-width: 69%; padding: 2.5em; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .flecha-previo, .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .flecha-siguiente { font-size: 3.5em; }
+  .contenedor .contenido .wave { top: -7.15em; }
+  .contenedor .contenedorPiepagina { justify-content: space-around; }
+  .contenedor .contenedorPiepagina .columna-logo { margin: 0 1em; }
+  .contenedor .contenedorPiepagina .columna-menu h2 { font-size: 1.2em; }
+  .contenedor .contenedorPiepagina .columna-menu ul { padding-left: 0.25em; font-size: 0.85em; }
+  .contenedor .contenedorPiepagina .columna-redes h2 { font-size: 1.2em; }
+  .contenedor .contenedorPiepagina .columna-redes .redes { line-height: 3em; }
+  .contenedor .contenedorPiepagina .columna-redes .redes .icono { font-size: 1.5em; }
+  .contenedor .contenedorPiepagina .columna-redes .redes a { font-size: 0.85em; }
+  .contenedor .contenedorPiepagina .columna-redes .redes label { margin-left: 0.75em; }
+  .contenedor .contenedorPiepagina .columna-contacto h2 { font-size: 1.2em; }
+  .contenedor .contenedorPiepagina .columna-contacto .datos { line-height: 3em; }
+  .contenedor .contenedorPiepagina .columna-contacto .datos .icono { font-size: 1.5em; }
+  .contenedor .contenedorPiepagina .columna-contacto .datos a { font-size: 0.85em; margin-left: 0.75em; }
+  .contenedor .contenedorPiepagina .columna-contacto .datos label { font-size: 0.85em; margin-left: 0.75em; }
+  .contenedor .contenedorPiepagina .contenedorInformacion { font-size: 0.85em; } }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 10/11/2021, 03:53:08 PM Author     : pcgc7
+*/
+/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 1024px */
+@media screen and (max-width: 1024px) { .contenedor { grid-template-rows: repeat(15, 6.45em); }
+  .contenedor .encabezado .logo img { margin: 1.75em 1em; }
+  .contenedor .contenido { grid-template-rows: repeat(12, 6.45em); }
+  .contenedor .contenido .textoTitulos p { font-size: 1.25em; }
+  .contenedor .contenido .menu .opcion { font-size: 2.75em; }
+  .contenedor .contenido .menu .tituloItem { font-size: 1em; }
+  .contenedor .contenido .imagenFondo .txtVision { font-size: 2em; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes { max-width: 73%; padding: 2em 2.5em; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .flecha-previo, .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .flecha-siguiente { font-size: 3em; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .slick-dots { bottom: 2%; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .slick-dots li { width: 0.75em; height: 0.75em; }
+  .contenedor .contenido .wave { top: -5.75em; }
+  .contenedor .contenedorPiepagina .columna-menu h2 { font-size: 0.9em; }
+  .contenedor .contenedorPiepagina .columna-menu ul { line-height: 3.1em; font-size: 0.6em; }
+  .contenedor .contenedorPiepagina .columna-redes h2 { font-size: 0.9em; }
+  .contenedor .contenedorPiepagina .columna-redes .redes { line-height: 2.45em; }
+  .contenedor .contenedorPiepagina .columna-redes .redes .icono { font-size: 1.25em; }
+  .contenedor .contenedorPiepagina .columna-redes .redes a { font-size: 0.6em; }
+  .contenedor .contenedorPiepagina .columna-contacto h2 { font-size: 0.9em; }
+  .contenedor .contenedorPiepagina .columna-contacto .datos { line-height: 2.45em; }
+  .contenedor .contenedorPiepagina .columna-contacto .datos .icono { font-size: 1.25em; }
+  .contenedor .contenedorPiepagina .columna-contacto .datos a { font-size: 0.6em; }
+  .contenedor .contenedorPiepagina .columna-contacto .datos label { font-size: 0.6em; }
+  .contenedor .contenedorPiepagina .contenedorInformacion { font-size: 0.6em; } }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 10/11/2021, 03:54:46 PM Author     : pcgc7
+*/
+/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 768px */
+@media screen and (max-width: 768px) { .contenedor { grid-template-rows: repeat(15, 5.55em); }
+  .contenedor .contenido { grid-template-rows: repeat(12, 5.55em); }
+  .contenedor .contenido .textoTitulos p { font-size: 1em; }
+  .contenedor .contenido .menu .item { height: 60%; }
+  .contenedor .contenido .menu .opcion { font-size: 2.25em; }
+  .contenedor .contenido .menu .tituloItem { font-size: 0.75em; }
+  .contenedor .contenido .imagenFondo .txtVision { font-size: 1.5em; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes { max-width: 85%; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .imgSlide { padding: 0.25em; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .flecha-previo, .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .flecha-siguiente { font-size: 2.5em; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .flecha-previo { left: 5%; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .flecha-siguiente { right: 5%; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .slick-list { margin: 0 2em; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .slick-dots { bottom: 3%; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .slick-dots li { width: 0.5em; height: 0.5em; }
+  .contenedor .contenido .wave { top: -4.25em; }
+  .contenedor .contenedorPiepagina .columna-menu h2 { font-size: 0.75em; }
+  .contenedor .contenedorPiepagina .columna-menu ul { font-size: 0.5em; padding-left: 0.5em; line-height: 2.5em; }
+  .contenedor .contenedorPiepagina .columna-redes h2 { font-size: 0.75em; }
+  .contenedor .contenedorPiepagina .columna-redes .redes { line-height: 1.6em; }
+  .contenedor .contenedorPiepagina .columna-redes .redes .icono { font-size: 1em; }
+  .contenedor .contenedorPiepagina .columna-redes .redes a { font-size: 0.5em; }
+  .contenedor .contenedorPiepagina .columna-redes .redes label { margin-left: 0.75em; }
+  .contenedor .contenedorPiepagina .columna-contacto h2 { font-size: 0.75em; }
+  .contenedor .contenedorPiepagina .columna-contacto .datos { line-height: 1.6em; }
+  .contenedor .contenedorPiepagina .columna-contacto .datos .icono { font-size: 1em; }
+  .contenedor .contenedorPiepagina .columna-contacto .datos a { margin-left: 0.75em; font-size: 0.5em; }
+  .contenedor .contenedorPiepagina .columna-contacto .datos label { margin-left: 0.75em; font-size: 0.5em; }
+  .contenedor .contenedorPiepagina .contenedorInformacion { font-size: 0.5em; } }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 10/11/2021, 03:56:12 PM Author     : pcgc7
+*/
+/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 576px */
+@media screen and (max-width: 576px) { .contenedor { grid-template-rows: repeat(15, 4.3em); }
+  .contenedor .encabezado .logo img { margin: 1.25em 0.75em; }
+  .contenedor .contenido { grid-template-rows: repeat(12, 4.3em); }
+  .contenedor .contenido .textoTitulos p { font-size: 0.75em; }
+  .contenedor .contenido .menu .opcion { font-size: 1.75em; }
+  .contenedor .contenido .menu .tituloItem { font-size: 0.55em; }
+  .contenedor .contenido .imagenFondo .txtVision { font-size: 1em; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes { max-width: 90%; padding: 1.5em 2em; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .flecha-previo, .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .flecha-siguiente { font-size: 2em; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .flecha-previo { left: 7%; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .flecha-siguiente { right: 7%; }
+  .contenedor .contenido .contenedor-slideshow .contenedor-imagenes .slick-dots { bottom: 4%; }
+  .contenedor .contenido .wave { top: -3.15em; }
+  .contenedor .contenedorPiepagina { align-items: stretch; }
+  .contenedor .contenedorPiepagina .columna-logo { display: none; }
+  .contenedor .contenedorPiepagina .columna-logo img { display: none; }
+  .contenedor .contenedorPiepagina .columna-menu { width: 30%; padding-left: 0.5em; }
+  .contenedor .contenedorPiepagina .columna-menu ul { padding-left: 1em; line-height: 2.45em; }
+  .contenedor .contenedorPiepagina .columna-redes { width: 30%; padding-left: 0.5em; }
+  .contenedor .contenedorPiepagina .columna-contacto { width: 30%; padding-left: 0.5em; }
+  .contenedor .contenedorPiepagina .contenedorInformacion { margin-top: 0.75em; } }
+/******************************************************************************/
+
+/*# sourceMappingURL=contacto.css.map */

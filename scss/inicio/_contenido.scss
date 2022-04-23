@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 9/11/2021, 05:47:13 PM
+    Author     : pcgc7
+*/
+
+.contenido {
+    grid-area: contenido;  
+    
+    display: grid;    
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 10em);            
+    
+    grid-template-areas:
+    "titulos    titulos    titulos    titulos    titulos    titulos"
+    "titulos    titulos    titulos    titulos    titulos    titulos"
+    "opciones   opciones   opciones   opciones   opciones   opciones"
+    "opciones   opciones   opciones   opciones   opciones   opciones"
+    "textos     textos     textos     textos     textos     textos"
+    "textos     textos     textos     textos     textos     textos"
+    "textos     textos     textos     textos     textos     textos"
+    "textos     textos     textos     textos     textos     textos"    
+    "imagenes   imagenes   imagenes   imagenes   imagenes   imagenes"
+    "imagenes   imagenes   imagenes   imagenes   imagenes   imagenes"
+    "imagenes   imagenes   imagenes   imagenes   imagenes   imagenes"
+    "imagenes   imagenes   imagenes   imagenes   imagenes   imagenes";     
+    
+    /******************** Estilos texto títulos inicio ***********************/
+    
+    @import "_textoTitulos.scss";
+    
+    /******************** Estilos menú de opciones ***************************/
+    
+    @import "_menu.scss";
+    
+    /******************** Estilos imagen de fondo y texto ********************/
+    
+    @import "_imagenFondo.scss";
+    
+    /******************** Estilos carrusel de imágenes ***********************/
+    
+    @import "_slideShow.scss";
+    
+    /******************** Estilos efecto de onda página **********************/
+    
+    @import "_efectoOnda.scss";
+                    
+    /*************************************************************************/
+}

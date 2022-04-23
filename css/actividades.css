@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 16/11/2021, 02:51:50 PM Author     : pcgc7
+*/
+/****************************** Variables ************************************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 16/11/2021, 02:52:12 PM Author     : pcgc7
+*/
+/******************** Estilos generales de la página *************************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 16/11/2021, 03:07:17 PM Author     : pcgc7
+*/
+* { box-sizing: border-box; }
+
+body { font-family: "Open Sans", sans-serif; background-image: url("../imagenes/fondoAzul.jpg"); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+
+::-webkit-scrollbar { display: none; }
+
+/******************** Estilos contenedor de la página ************************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 16/11/2021, 03:10:23 PM Author     : pcgc7
+*/
+.contenedor { display: grid; grid-template-columns: repeat(6, 1fr); grid-template-rows: 16em repeat(9, 1fr); grid-template-areas: "encabezado encabezado encabezado encabezado encabezado encabezado" "actividad  actividad  actividad  actividad  actividad  actividad" "actividad  actividad  actividad  actividad  actividad  actividad" "actividad  actividad  actividad  actividad  actividad  actividad" "actividad  actividad  actividad  actividad  actividad  actividad" "actividad  actividad  actividad  actividad  actividad  actividad" "actividad  actividad  actividad  actividad  actividad  actividad" "actividad  actividad  actividad  actividad  actividad  actividad" "actividad  actividad  actividad  actividad  actividad  actividad" "actividad  actividad  actividad  actividad  actividad  actividad"; /******************** Estilos encabezado de la página ********************/ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/ /* Created on : 16/11/2021, 03:13:05 PM Author     : pcgc7
+*/ /******************** Estilos contenidos de la página ********************/ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/ /* Created on : 16/11/2021, 03:18:54 PM Author     : pcgc7
+*/ /****************************** Mixin ****************************************/ /*****************************************************************************/ /*************************************************************************/ }
+.contenedor .encabezado { grid-area: encabezado; width: 100%; position: fixed; top: 0; z-index: 20; background: linear-gradient(to right, #f5f5f5 0%, #b59a47 100%); box-shadow: 0 0.75em 0.75em 0 rgba(0, 0, 0, 0.5); }
+.contenedor .encabezado .logo { display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
+.contenedor .encabezado .logo img { width: 73%; margin: 2.2em 1em; }
+.contenedor .encabezado .logo .btnMenu { display: none; color: #003958; text-decoration: none; font-size: 1.5em; }
+.contenedor .encabezado .menu { display: flex; flex-direction: row; justify-content: space-around; border-top: 0.0625em solid #003958; }
+.contenedor .encabezado .menu a { padding: 0.5em 0; margin: 0.5em 0; font-size: 1.25em; font-weight: 700; color: #003958; text-decoration: none; transition: all 0.3s ease; border-bottom: 0.16em solid transparent; }
+.contenedor .encabezado .menu a:hover { border-bottom: 0.16em solid #003958; }
+.contenedor .encabezado .menu a i { margin-right: 0.5em; }
+.contenedor .contenido { grid-area: actividad; max-width: 66.7%; margin: 0 auto; padding: 1.25em; background: #f5f5f5; border-radius: 0.625em; border: 0.125em solid #b59a47; box-shadow: 0 0.75em 0.75em 0 rgba(0, 0, 0, 0.5); }
+.contenedor .contenido h1 { font-weight: bold; margin: 0.3125em 0; color: #003958; }
+.contenedor .contenido hr { margin: 0.5em 0; height: 0.2em; background: #b59a47; border: none; }
+.contenedor .contenido .contenedorActividades { display: grid; grid-gap: 0 1.5em; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(1, 1fr); }
+.contenedor .contenido .contenedorActividades .detalleActividad { display: flex; flex-direction: column; }
+.contenedor .contenido .contenedorActividades h2 { margin: 0.5em 0; color: #003958; }
+.contenedor .contenido .contenedorActividades .actividad { display: grid; grid-gap: 0 1em; grid-template-rows: repeat(1, 5em); justify-items: center; align-items: center; text-align: justify; border-bottom: 1px solid #ccc; grid-template-columns: 6em 4em 1fr; }
+.contenedor .contenido .contenedorActividades .actividad:last-child { border-bottom: none; }
+.contenedor .contenido .contenedorActividades .actividad .dia { font-size: 2em; text-align: center; font-weight: bold; color: #003958; }
+.contenedor .contenido .contenedorActividades .actividad .mes { font-weight: bold; color: #cc0000; }
+.contenedor .contenido .contenedorActividades .actividad > i { font-size: 2em; color: #003958; }
+.contenedor .contenido .contenedorActividades .actividad > p { justify-self: start; align-content: center; color: #003958; }
+.contenedor .contenido .contenedorOtrasActividades { display: grid; grid-gap: 0 1em; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(1, 1fr); /* Definimos el tamaño de las imagenes para que ocupen el tamaño de la celda y no de la pantalla completa */ /* Agregamos estilos al contenedor donde se va a almacenar la imagen de tipo lightbox */ /* Creamos una clase extra para lograr que el valor de la propiedad transform pase de -100 a 0 */ /* Definimos el tamaño de la imagen que se va a agrandar cuando la escojamos */ /* Se muestra la imagen en un tamaño más amplio */ /* Agregamos estilos al texto que acompaña debajo de cada imagen  */ /* Agregamos estilos al icono y una posición en la pantalla */ }
+.contenedor .contenido .contenedorOtrasActividades .detalleActividad { display: flex; flex-direction: column; }
+.contenedor .contenido .contenedorOtrasActividades h2 { margin: 0.5em 0; color: #003958; }
+.contenedor .contenido .contenedorOtrasActividades .actividades { display: grid; grid-gap: 0 1em; grid-template-rows: repeat(1, 6em); justify-items: center; align-items: center; text-align: justify; border-bottom: 1px solid #ccc; grid-template-columns: 6em 1fr; }
+.contenedor .contenido .contenedorOtrasActividades .actividades:last-child { border-bottom: none; }
+.contenedor .contenido .contenedorOtrasActividades .actividades .dia { font-size: 2em; text-align: center; font-weight: bold; color: #003958; }
+.contenedor .contenido .contenedorOtrasActividades .actividades .mes { font-weight: bold; color: #cc0000; }
+.contenedor .contenido .contenedorOtrasActividades .actividadEspecial img { cursor: pointer; }
+.contenedor .contenido .contenedorOtrasActividades .img { width: 100%; height: 100%; object-fit: cover; /* Para que la imagen no se deteriore si pierde resolución */ }
+.contenedor .contenido .contenedorOtrasActividades .contenedor-img { /* Este contenedor se sale del grupo y se fija al navegador */ position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 50; transform: translateX(-100%); /* Ocultamos la imagen en dirección izquierda */ background: rgba(0, 0, 0, 0.7); /* Centramos vertical y horizontalmente la imagen de tipo lightbox */ display: flex; justify-content: center; align-items: center; transition: transform .4s ease-in; }
+.contenedor .contenido .contenedorOtrasActividades .moverContenedor { transform: translateX(0); }
+.contenedor .contenido .contenedorOtrasActividades .img-mostrar { height: 80%; transform: scale(0); display: block; object-fit: cover; transition: transform .2s .4s; }
+.contenedor .contenido .contenedorOtrasActividades .mostrar-img { transform: scale(1); }
+.contenedor .contenido .contenedorOtrasActividades .texto { position: fixed; color: #fff; bottom: 1em; }
+.contenedor .contenido .contenedorOtrasActividades .btn { position: absolute; top: 0.5em; right: 0.75em; font-size: 2.5em; color: #fff; cursor: pointer; }
+
+/******************** Estilos para dispositivos móviles **********************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 17/11/2021, 03:04:47 PM Author     : pcgc7
+*/
+/* Dispositivos con orientación horizontal y una resolución de pantalla máxima de 1280px */
+@media screen and (max-width: 1280px) { .contenedor { grid-template-rows: 12.75em repeat(9, 1fr); }
+  .contenedor .encabezado .logo img { width: 65%; margin: 1.5em 1em; }
+  .contenedor .encabezado .menu a { font-size: 1em; }
+  .contenedor .contenido { max-width: 85%; padding: 1em; }
+  .contenedor .contenido h1 { font-size: 1.75em; }
+  .contenedor .contenido .contenedorActividades { grid-gap: 0 1em; }
+  .contenedor .contenido .contenedorActividades h2 { font-size: 1.2em; margin: 0.25em 0; }
+  .contenedor .contenido .contenedorActividades .actividad > p { font-size: 0.85em; }
+  .contenedor .contenido .contenedorOtrasActividades { grid-gap: 0.5em; }
+  .contenedor .contenido .contenedorOtrasActividades h2 { font-size: 1.2em; margin: 0.25em 0; }
+  .contenedor .contenido .contenedorOtrasActividades .actividades > p { font-size: 0.85em; }
+  .contenedor .contenido .contenedorOtrasActividades .actividadEspecial .imgActividad { width: 100%; }
+  .contenedor .contenido .contenedorOtrasActividades .img-mostrar { width: 70%; }
+  .contenedor .contenido .contenedorOtrasActividades .texto { bottom: 1.5em; }
+  .contenedor .contenido .contenedorOtrasActividades .btn { font-size: 2em; } }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 17/11/2021, 03:39:55 PM Author     : pcgc7
+*/
+/* Dispositivos con orientación horizontal y una resolución de pantalla máxima de 1024px */
+@media screen and (max-width: 1024px) { .contenedor { grid-template-rows: 10.5em repeat(9, 1fr); }
+  .contenedor .encabezado .logo img { width: 55%; margin: 1em; }
+  .contenedor .encabezado .menu a { font-size: 0.75em; }
+  .contenedor .contenido { padding: 0.75em; }
+  .contenedor .contenido h1 { font-size: 1.5em; }
+  .contenedor .contenido .contenedorActividades { grid-gap: 0 0.75em; }
+  .contenedor .contenido .contenedorActividades .actividad { font-size: 0.75em; }
+  .contenedor .contenido .contenedorOtrasActividades .actividades { font-size: 0.75em; }
+  .contenedor .contenido .contenedorOtrasActividades .texto { font-size: 0.85em; }
+  .contenedor .contenido .contenedorOtrasActividades .btn { font-size: 1.75em; } }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 17/11/2021, 03:50:00 PM Author     : pcgc7
+*/
+/* Dispositivos con orientación horizontal y una resolución de pantalla máxima de 768px */
+@media screen and (max-width: 768px) { .contenedor { grid-template-rows: 9em repeat(9, 1fr); }
+  .contenedor .encabezado .logo img { width: 45%; }
+  .contenedor .encabezado .menu a { font-size: 0.6em; }
+  .contenedor .contenido { padding: 0.5em; }
+  .contenedor .contenido h1 { font-size: 1.25em; }
+  .contenedor .contenido .contenedorActividades { grid-gap: 0 0.5em; }
+  .contenedor .contenido .contenedorActividades h2 { font-size: 1em; }
+  .contenedor .contenido .contenedorActividades .actividad { font-size: 0.6em; }
+  .contenedor .contenido .contenedorOtrasActividades h2 { font-size: 1em; }
+  .contenedor .contenido .contenedorOtrasActividades .actividades { font-size: 0.6em; }
+  .contenedor .contenido .contenedorOtrasActividades .actividadEspecial .imgActividad { height: 100%; }
+  .contenedor .contenido .contenedorOtrasActividades .texto { bottom: 2em; }
+  .contenedor .contenido .contenedorOtrasActividades .btn { font-size: 1.5em; } }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 17/11/2021, 03:59:23 PM Author     : pcgc7
+*/
+/* Dispositivos con orientación horizontal y una resolución de pantalla máxima de 576px */
+@media screen and (max-width: 576px) { .contenedor { grid-template-rows: 5.25em repeat(9, 1fr); }
+  .contenedor .encabezado .logo { justify-content: space-between; margin-right: 1em; }
+  .contenedor .encabezado .logo img { width: 35%; margin: 0.75em; }
+  .contenedor .encabezado .logo .btnMenu { display: inline-block; font-size: 1.25em; }
+  .contenedor .encabezado .menu a { margin: 0.3em 1em; }
+  .contenedor .contenido h1 { font-size: 1em; }
+  .contenedor .contenido .contenedorActividades h2 { font-size: 0.85em; }
+  .contenedor .contenido .contenedorActividades .actividad { font-size: 0.5em; }
+  .contenedor .contenido .contenedorOtrasActividades h2 { font-size: 0.85em; }
+  .contenedor .contenido .contenedorOtrasActividades .actividades { font-size: 0.5em; }
+  .contenedor .contenido .contenedorOtrasActividades .texto { font-size: 0.7em; bottom: 1.5em; }
+  .contenedor .contenido .contenedorOtrasActividades .btn { font-size: 1.5em; } }
+/*****************************************************************************/
+
+/*# sourceMappingURL=actividades.css.map */

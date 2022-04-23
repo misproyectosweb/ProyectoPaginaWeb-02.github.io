@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 10/11/2021, 03:19:46 PM
+    Author     : pcgc7
+*/
+
+.contenedorPiepagina {
+    grid-area: piepagina;  
+    
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;
+    flex-wrap: wrap;    
+    
+    background-color: $colorAzul;
+    z-index: 20; 
+    
+    /******************** Estilos columnas pie de página *********************/
+    
+    @import "_columnasFooter.scss";    
+    
+    /******************** Estilos barra de información ***********************/
+    
+    @import "_barraInformacion.scss"; 
+    
+    /*************************************************************************/
+}

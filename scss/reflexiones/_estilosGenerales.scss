@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 15/11/2021, 03:09:29 PM
+    Author     : pcgc7
+*/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: $tipoFuente1;
+    background-image: $rutaImgAzul;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

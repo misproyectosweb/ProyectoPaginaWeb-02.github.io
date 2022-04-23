@@ -1,0 +1,120 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 15/11/2021, 03:36:59 PM
+    Author     : pcgc7
+*/
+
+/****************************** Mixin ****************************************/
+
+@mixin formatoTexto_1 ($margen, $estilo:disc) {
+    list-style-type: $estilo;
+    margin-left: $margen;
+}
+@mixin formatoTexto_2 {
+    list-style-type: none;
+    position: relative;
+    margin-left: 0.5em;
+}
+@mixin formatoTexto_3 {
+    font-weight: bold;
+    left: -2em;
+    position: absolute;
+    text-align: right;
+    width: 1.5em;
+}
+
+/*****************************************************************************/
+
+.contenido {
+    grid-area: texto;  
+    
+    margin: 0 auto;
+    max-width: 66.7%;
+    padding: 1.25em;
+    background: $colorWhitesmoke;
+    border-radius: 0.625em;
+    border: 0.125em solid $colorDorado;
+    box-shadow: $sombra;
+    
+    .btnVolverArriba {
+        display: none;
+        width: 2.5em;
+        height: 2.5em;
+        padding: 0.65em 1em;
+        font-size: 1.875em;
+        border-radius: 50%;
+        background: $colorAzul;
+        color: $colorDorado;
+        cursor: pointer;
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+    }
+    article {
+        h1 {
+            font-weight: bold;
+            margin: 0.3125em 0;
+            color: $colorAzul;
+        }
+        hr {
+            margin-bottom: 1.5em;
+            height: 0.2em;
+            background: $colorDorado;
+            border: none;
+        }
+        p {
+            text-indent: 1.5em;
+            text-align: justify;
+            margin: 0.5em 0;
+        }
+        
+        /* Agrega distintos tipos de formatos y caracteristicas especiales al texto */
+        .textoVinetas1 {
+            @include formatoTexto_1(0.3em);
+        }
+        .textoVinetas2 {
+            @include formatoTexto_1(0.3em, square);
+        }
+        .textoGrande {
+            background: $colorWhitesmoke;
+            width: 10.5em;
+            height: 10.5em;
+            float: left;
+            margin: 0 0.5em;
+            padding-right: 0.5em;
+            padding-bottom: 0.5em;
+            font-size: 2em;
+            font-weight: 700;
+            border-right: 0.3125em solid $colorDorado;
+            p {
+               text-indent: 0; 
+            }
+        }
+        blockquote {
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        /* Cambia el color de los números, letras y separadores en listas ordenadas */
+        .formatoNumeros ol li {
+            @include formatoTexto_2;
+            counter-increment: listaNumeros;            
+        }
+        .formatoNumeros ol li::before {
+            @include formatoTexto_3;
+            content: counter(listaNumeros)".";            
+        }
+        .formatoLetras ol li {
+            @include formatoTexto_2;
+            counter-increment: listaLetras;            
+        }
+        .formatoLetras ol li::before {
+            @include formatoTexto_3;
+            content: counter(listaLetras, lower-alpha)".";            
+        }
+    }
+}

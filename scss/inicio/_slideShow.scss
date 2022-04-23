@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 10/11/2021, 03:13:43 PM
+    Author     : pcgc7
+*/
+
+
+/********************************* Mixin *************************************/
+
+@mixin flechas {
+    position: absolute;
+    top: 39%;
+    z-index: 30;
+    color: $colorAzul;    
+    font-size: 5em;
+    text-align: center;
+    &:hover {
+        cursor: pointer;
+        color: $colorDorado; 
+    }
+}
+
+/*****************************************************************************/
+
+.contenedor-slideshow {
+    grid-area: imagenes;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    background-image: $imgBackground_3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+        
+    .contenedor-imagenes {
+        max-width: 55%;    
+        height: auto;
+        margin: 0 auto;
+        padding: 2em 2.5em;
+        position: absolute;
+        z-index: 30;
+        .imgSlide {
+            width: 75%;
+            margin: 0 auto;             
+            border: 0.5em double $colorAzul;
+            border-radius: 0.5em;
+            padding: 0.5em;
+        }
+        .slick-list {
+            margin: 0 2.5em;
+        }        
+        .flecha-previo {
+            @include flechas;
+            left: 1%;            
+        }
+        .flecha-siguiente {
+            @include flechas;
+            right: 1%;            
+        }                               
+        .slick-dots {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            li {
+                list-style: none;
+                width: 1em;
+                height: 1em;
+                background-color: $colorAzul;
+                border-radius: 50%;
+                display: inline-block;
+                margin: 0 0.35em;
+                &.slick-active {
+                    background-color: $colorDorado;
+                }
+                button {
+                    display: none;
+                }                
+            }
+        }
+        &.slick-initialized {                    
+            &.slick-slider {
+                &.slick-dotted {
+                    margin-bottom: 0;
+                }
+            }
+        }            
+    }
+}

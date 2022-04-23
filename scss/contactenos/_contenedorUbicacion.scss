@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 18/11/2021, 05:41:10 PM
+    Author     : pcgc7
+*/
+
+/****************************** Mixin ****************************************/
+
+@mixin tituloH3 {
+    padding: 0 0.5em;
+    color: $colorAzul;
+}
+@mixin parrafoP {
+    font-weight: 700;
+    color: $colorAzul;
+}
+
+/*****************************************************************************/
+
+.ubicacion {
+    display: flex;
+    
+    flex-direction: column;
+    align-content: flex-start;
+    background: $colorSilver;
+    border-radius: 0.3125em;
+    
+    .contenedorMapa {
+        h3 {
+            @include tituloH3;
+        }
+        p {
+            padding: 0 0.5em;
+            @include parrafoP;          
+        }
+        .mapa {
+            padding: 0 0.5em;
+            iframe {
+                height: 21.25em;
+            }
+        }
+    }
+    .contenedorDatos {
+        h3 {
+            @include tituloH3;
+        }
+        p {
+            @include parrafoP;
+        }
+        .datos {
+            display: grid;
+            grid-template-columns: 4em 1fr;
+            grid-template-rows: repeat(1, 3.25em);
+            align-items: center;
+            .icono {
+                margin: 0 auto;
+                font-size: 2em;
+                color: $colorAzul;
+            }
+        }
+        a {
+            text-decoration: none;
+            @include parrafoP;
+        }
+    }
+}

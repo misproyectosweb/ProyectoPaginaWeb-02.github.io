@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 14/11/2021, 07:16:33 PM Author     : pcgc7
+*/
+/****************************** Variables ************************************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 14/11/2021, 03:55:18 PM Author     : pcgc7
+*/
+/******************** Estilos generales de la página *************************/
+body { font-family: "Open Sans", sans-serif; background-image: url("../imagenes/fondoMorado.jpg"); /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/ /* Created on : 8/04/2022, 07:23:43 PM Author     : pcgc7
+*/ }
+body * { box-sizing: border-box; }
+body body { background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+body ::-webkit-scrollbar { display: none; }
+
+/******************** Estilos contenedor de la página ************************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 14/11/2021, 04:22:49 PM Author     : pcgc7
+*/
+.contenedor { display: grid; grid-template-columns: repeat(6, 1fr); grid-template-rows: 16em repeat(9, 1fr); grid-template-areas: "encabezado encabezado encabezado encabezado encabezado encabezado" "texto      texto      texto      texto      texto      texto" "texto      texto      texto      texto      texto      texto" "texto      texto      texto      texto      texto      texto" "texto      texto      texto      texto      texto      texto" "texto      texto      texto      texto      texto      texto" "texto      texto      texto      texto      texto      texto" "texto      texto      texto      texto      texto      texto" "texto      texto      texto      texto      texto      texto" "texto      texto      texto      texto      texto      texto"; /******************** Estilos encabezado de la página ********************/ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/ /* Created on : 14/11/2021, 05:32:26 PM Author     : pcgc7
+*/ /******************** Estilos contenidos de la página ********************/ /*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/ /* Created on : 14/11/2021, 05:43:28 PM Author     : pcgc7
+*/ /*************************************************************************/ }
+.contenedor .encabezado { grid-area: encabezado; width: 100%; position: fixed; top: 0; z-index: 20; background: linear-gradient(to right, #f5f5f5 0%, #b59a47 100%); box-shadow: 0 0.75em 0.75em 0 rgba(0, 0, 0, 0.5); }
+.contenedor .encabezado .logo { display: flex; flex-direction: row; justify-content: flex-start; align-items: center; }
+.contenedor .encabezado .logo img { width: 73%; margin: 2.25em 1.25em; }
+.contenedor .encabezado .logo .btnMenu { display: none; color: #003958; text-decoration: none; font-size: 1.5em; }
+.contenedor .encabezado .menu { display: flex; flex-direction: row; justify-content: space-around; border-top: 0.0625em solid #003958; }
+.contenedor .encabezado .menu a { padding: 0.5em 0; margin: 0.5em 0; font-size: 1.25em; font-weight: 700; color: #003958; text-decoration: none; transition: all 0.3s ease; border-bottom: 0.16em solid transparent; }
+.contenedor .encabezado .menu a:hover { border-bottom: 0.16em solid #003958; }
+.contenedor .encabezado .menu a i { margin-right: 0.5em; }
+.contenedor .contenido { grid-area: texto; margin: 0 auto; max-width: 66.7%; padding: 1.25em; background: #f5f5f5; border-radius: 0.625em; border: 0.125em solid #b59a47; box-shadow: 0 0.75em 0.75em 0 rgba(0, 0, 0, 0.5); }
+.contenedor .contenido article h1 { font-weight: bold; margin: 0.3125em 0; color: #003958; }
+.contenedor .contenido article hr { margin-bottom: 1.5em; height: 0.2em; background: #b59a47; border: none; }
+.contenedor .contenido article p { text-indent: 1.5em; text-align: justify; margin: 0.5em 0; }
+.contenedor .contenido article figure { margin: 0; }
+.contenedor .contenido article figure img { width: 25.5%; float: left; padding-right: 1em; padding-bottom: 1em; }
+
+/******************** Estilos para dispositivos móviles **********************/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 14/11/2021, 05:54:21 PM Author     : pcgc7
+*/
+/* Dispositivos con orientación horizontal y una resolución de pantalla máxima de 1280px */
+@media screen and (max-width: 1280px) { .contenedor { grid-template-rows: 12.75em repeat(9, 1fr); }
+  .contenedor .encabezado .logo img { width: 65%; margin: 1.5em 1em; }
+  .contenedor .encabezado .menu a { font-size: 1em; }
+  .contenedor .contenido { max-width: 85%; padding: 1em; }
+  .contenedor .contenido article h1 { font-size: 1.75em; }
+  .contenedor .contenido article hr { margin-bottom: 1.25em; }
+  .contenedor .contenido article p { font-size: 0.85em; }
+  .contenedor .contenido article figure img { padding-right: 0.75em; padding-bottom: 0.75em; } }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 14/11/2021, 06:00:16 PM Author     : pcgc7
+*/
+/* Dispositivos con orientación horizontal y una resolución de pantalla máxima de 1024px */
+@media screen and (max-width: 1024px) { .contenedor { grid-template-rows: 10.5em repeat(9, 1fr); }
+  .contenedor .encabezado .logo img { width: 55%; margin: 1em; }
+  .contenedor .encabezado .menu a { font-size: 0.75em; }
+  .contenedor .contenido article h1 { font-size: 1.5em; }
+  .contenedor .contenido article p { font-size: 0.75em; }
+  .contenedor .contenido article figure img { padding-right: 0.5em; padding-bottom: 0.5em; } }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 14/11/2021, 06:07:45 PM Author     : pcgc7
+*/
+/* Dispositivos con orientación horizontal y una resolución de pantalla máxima de 768px */
+@media screen and (max-width: 768px) { .contenedor { grid-template-rows: 9em repeat(9, 1fr); }
+  .contenedor .encabezado .logo img { width: 45%; }
+  .contenedor .encabezado .menu a { font-size: 0.6em; }
+  .contenedor .contenido article h1 { font-size: 1.25em; }
+  .contenedor .contenido article hr { margin-bottom: 0.75em; }
+  .contenedor .contenido article p { font-size: 0.75em; }
+  .contenedor .contenido article figure img { padding-right: 0.35em; padding-bottom: 0.35em; } }
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* Created on : 14/11/2021, 06:10:54 PM Author     : pcgc7
+*/
+/* Dispositivos con orientación horizontal y una resolución de pantalla máxima de 576px */
+@media screen and (max-width: 576px) { .contenedor { grid-template-rows: 5.25em repeat(9, 1fr); }
+  .contenedor .encabezado .logo { justify-content: space-between; margin-right: 1em; }
+  .contenedor .encabezado .logo img { width: 35%; margin: 0.75em; }
+  .contenedor .encabezado .logo .btnMenu { display: inline-block; font-size: 1.25em; }
+  .contenedor .encabezado .menu { display: grid; grid-template-areas: "menu menu menu" "menu menu menu"; justify-content: space-between; }
+  .contenedor .encabezado .menu a { margin: 0.3em 1em; }
+  .contenedor .contenido article h1 { font-size: 1em; }
+  .contenedor .contenido article hr { height: 0.1em; }
+  .contenedor .contenido article p { font-size: 0.65em; } }
+/*****************************************************************************/
+
+/*# sourceMappingURL=nuestroPerfil.css.map */

@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 29/11/2021, 02:56:06 PM
+    Author     : pcgc7
+*/
+
+/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 1024px */
+@media screen and (max-width: 1024px) {
+    .contenedor {
+        grid-template-rows: 10.5em repeat(9, 1fr);
+        .encabezado {
+            .logo {
+                img {
+                    width: 55%;
+                    margin: 1em;
+                }
+            }
+            .menu {
+                a {
+                    font-size: 0.75em;
+                }
+            }
+        }
+        .contenido {
+            padding: 0.75em;
+            h1 {
+                font-size: 1.5em;
+            }
+            .contenedorFormulario {
+                grid-gap: 0 0.75em;
+                .formulario {
+                    h3 {
+                        font-size: 0.77em;
+                    }
+                    .frmLabel {
+                        font-size: 0.7em;                            
+                    }
+                    input[type=text] {
+                        height: 2.75em;
+                        margin: 0.4em;                            
+                    }                        
+                    input[placeholder]{
+                        font-size: 0.75em;
+                    }
+                    textarea {        
+                        height: 8em;    
+                        margin: 0.4em;        
+                    } 
+                    .frmBoton {
+                        font-size: 0.75em;
+                    }
+                    .formulario_input_error {
+                        font-size: 0.625em;
+                    }
+                    .formulario_validacion_estado {                
+                        bottom: 1.05em;        
+                        font-size: 0.85em;        
+                    }
+                }
+                .ubicacion {                                    
+                    .contenedorMapa {
+                        h3 {
+                            font-size: 0.77em;
+                        }
+                        p {
+                            font-size: 0.7em;
+                        }
+                        .mapa {
+                            iframe {
+                                height: 19em; 
+                            }
+                        }
+                    }
+                    .contenedorDatos {
+                        h3 {
+                            font-size: 0.77em;
+                        }
+                        .datos {
+                            font-size: 0.7em;
+                        }
+                    }
+                }
+            } 
+        }
+    }                                 
+}

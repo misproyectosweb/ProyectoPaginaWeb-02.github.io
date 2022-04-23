@@ -1,0 +1,86 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 29/11/2021, 02:55:47 PM
+    Author     : pcgc7
+*/
+
+/* Dispositivos con orientación horizontal con una resolución de pantalla máxima de 1280px */
+@media screen and (max-width: 1280px) {
+    .contenedor {
+        grid-template-rows: 12.75em repeat(9, 1fr);
+        .encabezado {
+            .logo {
+                img {
+                    width: 65%;
+                    margin: 1.5em 1em; 
+                }
+            }
+            .menu {
+                a {
+                    font-size: 1em; 
+                }
+            }
+        }
+        .contenido {
+            max-width: 85%;
+            padding: 1em;
+            h1 {
+                font-size: 1.75em;
+            }
+            .contenedorFormulario {
+                grid-gap: 0 1em;
+                .formulario {
+                    h3 {
+                        font-size: 0.95em
+                    }
+                    .frmLabel {
+                        font-size: 0.8em;
+                    }
+                    input[type=text] {                
+                        padding: 0.4em;    
+                    }    
+                    input[placeholder]{
+                        font-size: 0.8em;
+                    }
+                    textarea {
+                        padding: 0.4em;
+                    }
+                    .frmBoton {
+                        width: 25%;                        
+                        font-size: 0.8em;
+                    }
+                    .formulario_validacion_estado {                
+                        bottom: 1.1em;                
+                    }
+                }
+                .ubicacion {                                    
+                    .contenedorMapa {
+                        h3 {
+                            font-size: 0.95em;
+                        }
+                        p {
+                            font-size: 0.85em;
+                        }
+                        .mapa {
+                            iframe {
+                                height: 20em;
+                            }
+                        }
+                    }
+                    .contenedorDatos {
+                        h3 {
+                            font-size: 0.95em;
+                        }
+                        .datos {
+                            font-size: 0.85em;
+                        }
+                    }
+                }
+            }   
+        }
+    }                                
+}

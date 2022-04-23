@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 15/11/2021, 07:03:46 PM
+    Author     : pcgc7
+*/
+
+/* Dispositivos con orientación horizontal y una resolución de pantalla máxima de 768px */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-rows: 9em repeat(9, 1fr);
+        .encabezado {
+            .logo {
+                img {
+                    width: 45%;
+                }
+            }
+            .menu {
+                a {
+                    font-size: 0.7em;
+                }
+            }
+        }
+        .contenido {                    
+            .btnVolverArriba {
+                font-size: 1.25em;                   
+                bottom: 0.5em;                       
+                right: 0.35em;                       
+            }
+            article {
+                h1 {
+                   font-size: 1.25em; 
+                }
+                hr {
+                   margin-bottom: 0.75em; 
+                }
+                h3 {
+                    font-size: 0.85em;
+                }
+                p {
+                    font-size: 0.75em;
+                }
+                .formatoNumeros {
+                    font-size: 0.75em;
+                    margin-left: -1.45em;
+                }
+                .formatoLetras {
+                    font-size: 0.75em;
+                    margin-left: -1.45em;
+                }
+                .textoVinetas1 {
+                    font-size: 0.75em;
+                    margin-left: -1em;
+                }
+                .textoVinetas2 {
+                    font-size: 0.75em;
+                    margin-left: -1em;
+                }
+                blockquote {
+                    font-size: 0.75em;
+                }
+                .textoGrande {        
+                    font-size: 1.25em;                                       
+                }
+            }
+        }     
+    }    
+}

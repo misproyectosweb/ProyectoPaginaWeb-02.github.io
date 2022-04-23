@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 18/11/2021, 03:31:27 PM
+    Author     : pcgc7
+*/
+
+/****************************** Mixin ****************************************/
+
+@mixin estadoCampos {
+    font-size: 0.8em;
+    padding: 1em;
+    font-weight: 600;
+    margin: 0;
+}
+
+/*****************************************************************************/
+
+.formulario_grupo_input {
+    position: relative;        
+}
+.formulario_input:focus {
+    border: 0.1875em solid $colorAzul2;
+    outline: none;
+    box-shadow: 0.1875em 0 1.875em rgba(163,163,163,0.4);
+}
+.formulario_input_error {
+    font-size: 0.75em;
+    margin: 0;
+    padding-left: 0.75em;
+    color: $colorRojo;
+    font-style: italic;
+    font-weight: 600;
+    display: none;
+}
+.formulario_input_error-activo {
+    display: block;
+}
+.formulario_validacion_estado {
+    position: absolute;
+    right: 2.5em;
+    bottom: 1.45em;
+    z-index: 10;
+    font-size: 1em;
+    opacity: 0;
+}
+.formulario_grupo-correcto {
+    .formulario_validacion_estado {
+        color: $colorVerde1;
+        opacity: 1;
+    }
+} 
+.formulario_grupo-incorrecto {
+    .frmLabel {
+        color: $colorRojo;
+    }
+} 
+.formulario_grupo-incorrecto {
+    .formulario_validacion_estado {
+        color: $colorRojo;
+        opacity: 1;
+    }
+} 
+.formulario_grupo-incorrecto {
+    .formulario_input {
+        border: 0.1875em solid $colorRojo;
+    }
+} 
+    
+/******************** Estilos para las validaciones en PHP *******************/
+
+.error {
+    background-color: $colorRojo2;
+    @include estadoCampos;
+}
+.correcto {
+    background-color: $colorVerde1; 
+    @include estadoCampos;
+}

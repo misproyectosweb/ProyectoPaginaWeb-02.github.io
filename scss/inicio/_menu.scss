@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 9/11/2021, 05:53:50 PM
+    Author     : pcgc7
+*/
+
+.menu {
+    grid-area: opciones;
+    
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;  
+    
+    background-color: $colorBlanco;
+            
+    .item {    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        height: 65%;
+        width: 15%;    
+        text-align: center;
+        text-decoration: none;    
+        color: $colorAzul;
+        transition: all ease .3s;
+        border-radius: 0.625em;
+        &:hover {    
+            border: 0.15em solid $colorAzul;
+            background-color: rgba(181, 154, 71, 0.4);
+            border-radius: 0.625em;
+            cursor: pointer;
+        }
+    }
+    .opcion {
+        font-size: 3.75em;
+    }
+}
