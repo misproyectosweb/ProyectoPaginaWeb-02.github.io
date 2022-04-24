@@ -6,9 +6,9 @@ Este sitio web fue creado y desarrollado usando la plataforma **NetBeans 10.0.**
 El archivo **index.html** es el que contiene la página de inicio, la página principal del sitio web.
 
 El sitio web en su totalidad consta de varias secciones: 
-1. Un encabezado con el logo de la organización 
-2. Una sección principal que contiene un mensaje, el menú principal, un enunciado adaptado para mostrar, un carusel de imagenes, entre otros 
-3. Un pie de página que muestra la información de la organización.
+**1. Un encabezado:** donde se muestra el logo de la organización
+**2. Una sección principal:** que contiene un mensaje, el menú principal, un enunciado adaptado para mostrar, un carusel de imagenes, entre otros 
+**3. Un pie de página:** que muestra la información de la organización.
 
 El menú principal consta de cuatro opciones: 
 - **Quienes somos:** muestra información acerca de la organización. Integra un submenú con 6 opciones adicionales, las cuales describen aspectos tales como la visión, la misión, los valores, entre otros 
