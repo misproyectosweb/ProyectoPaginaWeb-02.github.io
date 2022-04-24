@@ -6,15 +6,17 @@ Este sitio web fue creado y desarrollado usando la plataforma **NetBeans 10.0.**
 El archivo **index.html** es el que contiene la página de inicio, la página principal del sitio web.
 
 El sitio web en su totalidad consta de varias secciones: 
-**1. Un encabezado:** donde se muestra el logo de la organización
-**2. Una sección principal:** que contiene un mensaje, el menú principal, un enunciado adaptado para mostrar, un carusel de imagenes, entre otros 
-**3. Un pie de página:** que muestra la información de la organización.
+- **Un encabezado:** donde se muestra el logotipo de la organización
+- **Una sección principal:** que contiene un mensaje, el menú principal, una sección adaptada para mostrar un enunciado especial, un carrusel de imagenes 
+- **Un pie de página:** que muestra la información de la organización
 
 El menú principal consta de cuatro opciones: 
-- **Quienes somos:** muestra información acerca de la organización. Integra un submenú con 6 opciones adicionales, las cuales describen aspectos tales como la visión, la misión, los valores, entre otros 
-- **Reflexiones:** muestra una página dedicada a colocar mensajes y/o reflexiones basados en citas bíblicas 
+- **Quienes somos:** muestra información acerca de la organización. Integra un submenú con 6 opciones adicionales, las cuales describen aspectos tales como la visión, la misión, los valores, entre otros, de la organización
+- **Reflexiones:** muestra una página dedicada a publicar artículos, noticias, mensajes y/o reflexiones bíblicas
 - **Actividades:** muestra las actividades que va a realizar la organización durante el mes en curso; así como actividades que se van a realizar a corto plazo 
 - **Contáctenos:** consta de dos secciones: un formulario de contacto para que la persona puede ponerse en contacto con la organización y un mapa que muestra la ubicación junto con datos adicionales de contacto
+
+Para el formulario de contacto se programaron validaciones tanto del lado cliente realizado con JavaScript; así como del lado del servidor programado con PHP
 
 Para enviar la información del usuario a través del formulario de contacto se utiliza una clase llamada **PHPMailer**. PHPMailer es una clase php para enviar emails basada en el componente active server ASPMail. Permite de una forma sencilla tareas complejas como por ejemplo:
 - Enviar mensajes de correo con ficheros adjuntos (attachments) 
@@ -22,3 +24,26 @@ Para enviar la información del usuario a través del formulario de contacto se 
 - Enviar emails via sendmail, PHP mail(), o con SMTP.
 
 A continuación se presentan algunas imágenes del sitio web brevemente descrito anteriormente:
+
+![01  PaginaInicio_1](https://user-images.githubusercontent.com/98922137/164997738-801b0984-8f8c-445b-97f9-7e86c7a360a5.png)
+
+![02  PaginaInicio_2](https://user-images.githubusercontent.com/98922137/164997755-101a21b3-36f3-4848-9382-9c851cba8b17.png)
+
+![03  PaginaInicio_3](https://user-images.githubusercontent.com/98922137/164997769-cd75a55d-7f04-4fb7-a152-fc3025e01839.png)
+
+![04  Nuestra visión_1](https://user-images.githubusercontent.com/98922137/164998391-41f59ddd-e6bd-41ba-a863-2fbbca5ad4a7.jpg)
+
+![07  Nuestro perfil_1](https://user-images.githubusercontent.com/98922137/164998421-9481040a-438d-44ee-8ab2-b9c1f91cf297.jpg)
+
+![11  Reflexión_1](https://user-images.githubusercontent.com/98922137/164998465-378cd382-ecce-4a36-a68b-feef528fde08.jpg)
+
+![14  Actividades_1](https://user-images.githubusercontent.com/98922137/164998476-043cef6d-9095-4da6-a09b-c6af19943869.jpg)
+
+![16  Actividades_3](https://user-images.githubusercontent.com/98922137/164998492-e71bb858-265f-44fe-9429-626b5bbaa10d.jpg)
+
+![19  Contacto_3](https://user-images.githubusercontent.com/98922137/164998535-03d1c28f-e5a4-4236-b184-de68fc8abf18.jpg)
+
+![20  Contacto_4](https://user-images.githubusercontent.com/98922137/164998542-a245b720-8c61-476a-b7b7-3fcf56ea07b3.jpg)
+
+![22  Contacto_6](https://user-images.githubusercontent.com/98922137/164998551-a5a44973-14cb-4403-96aa-b9d15d446566.jpg)
+
