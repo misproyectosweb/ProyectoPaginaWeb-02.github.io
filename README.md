@@ -25,7 +25,7 @@ Para enviar la información del usuario a través del formulario de contacto se 
 
 A continuación se presentan algunas imágenes del sitio web brevemente descrito anteriormente:
 
-![01  PaginaInicio_1](https://user-images.githubusercontent.com/98922137/164997738-801b0984-8f8c-445b-97f9-7e86c7a360a5.png)
+![01  PaginaInicio_1](https://user-images.githubusercontent.com/98922137/164998874-1692a457-f1f9-46e5-9af8-c8762f0b8207.png)
 
 ![02  PaginaInicio_2](https://user-images.githubusercontent.com/98922137/164997755-101a21b3-36f3-4848-9382-9c851cba8b17.png)
 
