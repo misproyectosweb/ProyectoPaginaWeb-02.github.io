@@ -1,4 +1,5 @@
 # ProyectoPaginaWeb-02.github.io
+
 Página web creada con:
 - **HTML:** permite crear la estructura del sitio web mediante etiquetas
 - **SASS:** herramienta que permite generar, de manera automática, hojas de estilo, añadiéndoles características que no tiene CSS como variables, funciones, selectores anidados, herencia,
