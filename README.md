@@ -1,5 +1,9 @@
 # ProyectoPaginaWeb-02.github.io
-Página web creada con HTML, CSS (usando preprocesador SASS), JavaScript y PHP
+Página web creada con:
+- **HTML:** permite crear la estructura del sitio web mediante etiquetas
+- **SASS:** herramienta que permite generar, de manera automática, hojas de estilo, añadiéndoles características que no tiene CSS como variables, funciones, selectores anidados, herencia,
+- **JavaScript:** añade características que permite establecer acciones interactivas al sitio web
+- **PHP:** favorece la conexión entre los servidores y la interfaz de usuario
 
 Este sitio web fue creado y desarrollado usando la plataforma **NetBeans 10.0.** Además está adaptado para ejecutarse en dispositivos móviles.
 
@@ -15,6 +19,8 @@ El menú principal consta de cuatro opciones:
 - **Reflexiones:** muestra una página dedicada a publicar artículos, noticias, mensajes y/o reflexiones bíblicas
 - **Actividades:** muestra las actividades que va a realizar la organización durante el mes en curso; así como actividades que se van a realizar a corto plazo 
 - **Contáctenos:** consta de dos secciones: un formulario de contacto para que la persona puede ponerse en contacto con la organización y un mapa que muestra la ubicación junto con datos adicionales de contacto
+
+En cada archivo de estilos css se utiliza la técnica de rejilla CSS Grid Layout para organizar de manera más eficiente cada elemento de la interfaz del sitio web, el cual los acomoda tanto a lo largo como a lo ancho de la ventana del navegador. Además, es complementado con flexbox, el cual ayudar a distribuir el espacio entre los ítems de la interfaz y mejora las capacidades de alineación de cada elemento.
 
 Para el formulario de contacto se programaron validaciones tanto del lado cliente realizado con JavaScript; así como del lado del servidor programado con PHP
 
