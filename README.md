@@ -10,7 +10,7 @@ Este sitio web fue creado y desarrollado usando la plataforma **NetBeans 10.0.**
 
 El archivo **index.html** es el que contiene la página de inicio, la página principal del sitio web.
 
-El sitio web en su totalidad consta de varias secciones: 
+La página de inicio o principal consta de varias secciones: 
 - **Un encabezado:** donde se muestra el logotipo de la organización
 - **Una sección principal:** que contiene un mensaje, el menú principal, una sección adaptada para mostrar un enunciado especial, un carrusel de imagenes 
 - **Un pie de página:** que muestra la información de la organización
